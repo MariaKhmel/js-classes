@@ -8,8 +8,13 @@
 
 const checkUserAge = () => {
   const userAgeInput = prompt('What is your age?');
-  const result = userAgeInput;
-  console.log(result)
+  const result = Number(userAgeInput);
+
+  if (typeof result === 'number' && result > 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 console.log(checkUserAge())
