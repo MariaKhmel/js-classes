@@ -69,3 +69,24 @@
 // }
 
 // console.log(checkEyeSight())
+
+/*
+      напишіть функцію, яка отримує в якості аргументів зарплатню у гривні та назву валюти скорочено (usd, euro),
+      та повертає зарплатню у долларі по формулі грн/42, або зарплатню у євро по формулі грн/45,
+      або зарплатню у гривні, якщо валюта інша.
+      */
+
+const calculateSalary = (salaryAmout, currency) => {
+  if (currency === 'usd') {
+    return (salaryAmout / 42).toFixed(2);
+  } else if (currency === 'euro') {
+    return (salaryAmout / 45).toFixed(2);
+  } else {
+    return salaryAmout;
+  }
+}
+
+console.log(calculateSalary(1000, 'usd'))
+
+console.log(calculateSalary(1000, 'euro'))
+console.log(calculateSalary(1000, 'hrn'))
