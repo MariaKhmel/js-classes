@@ -76,17 +76,34 @@
       або зарплатню у гривні, якщо валюта інша.
       */
 
-const calculateSalary = (salaryAmout, currency) => {
-  if (currency === 'usd') {
-    return (salaryAmout / 42).toFixed(2);
-  } else if (currency === 'euro') {
-    return (salaryAmout / 45).toFixed(2);
-  } else {
-    return salaryAmout;
-  }
-}
+// const calculateSalary = (salaryAmout, currency) => {
+//   if (currency === 'usd') {
+//     return (salaryAmout / 42).toFixed(2);
+//   } else if (currency === 'euro') {
+//     return (salaryAmout / 45).toFixed(2);
+//   } else {
+//     return salaryAmout;
+//   }
+// }
 
-console.log(calculateSalary(1000, 'usd'))
+// console.log(calculateSalary(1000, 'usd'))
 
-console.log(calculateSalary(1000, 'euro'))
+// console.log(calculateSalary(1000, 'euro'))
+// console.log(calculateSalary(1000, 'hrn'))
+
+// const calculateSalary = (salaryAmout, currency) => {
+
+//   switch (currency) {
+//     case 'usd':
+//       return (salaryAmout / 42).toFixed(2)
+//     case 'euro':
+//       return (salaryAmout / 45).toFixed(2)
+//     default:
+//       return salaryAmout;
+//   }
+// }
+
+// console.log(calculateSalary(1000, 'usd'))
+
+// console.log(calculateSalary(1000, 'euro'))
 console.log(calculateSalary(1000, 'hrn'))
