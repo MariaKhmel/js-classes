@@ -51,3 +51,21 @@
 // }
 
 // console.log(checkUserAge())
+
+/*
+        Напишіть функцію, що перевіряє чи можно призвати людину на строковую службу на основі
+        гостроти зору. Сама функція має повертати true, якщо гострота зору -6 або меньше и false -
+        якщо більша. Для перевірки гостроту зору можно запитувати її користувача за домопогою prompt.
+        */
+
+
+// const checkEyeSight = () => {
+//   const answer = prompt('What is your eyesight?');
+//   if (Number(answer) > -6) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(checkEyeSight())
