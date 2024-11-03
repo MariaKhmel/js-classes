@@ -139,3 +139,20 @@
 // }
 
 // console.log(areaCalculator(10))
+
+const floors = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// for (let i = 0; i < floors.length; i += 1) {
+//   if (floors[i] === 4) {
+//     continue;
+//   }
+//   console.log(`floor - ${floors[i]}`)
+// }
+
+// for (const floor of floors) {
+//   if (floor === 4) {
+//     continue;
+//   }
+//   console.log(`floor - ${floor}`)
+// }
+
