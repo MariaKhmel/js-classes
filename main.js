@@ -156,3 +156,24 @@ const floors = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //   console.log(`floor - ${floor}`)
 // }
 
+/*
+Напишіть код, який працює так:
+1. Запитує у користувача, скільки людей прийшло на танці.
+2. Виводить к консоль "всі будуть по парам", якщо число кратке 2 і "хтось залишиться без пари"
+якщо ні.
+*/
+
+// const answer = prompt("How many dancers are present?")
+
+// const estimateDancePairs = numberOfDancers => {
+//   if (numberOfDancers < 1) {
+//     return;
+//   }
+//   if (Number(numberOfDancers) % 2 === 0) {
+//     console.log('Everyone has someone to dance with!')
+//   } else {
+//     console.log('Someone does not have a pair to dance with!')
+//   }
+// }
+
+// console.log(estimateDancePairs(answer))
