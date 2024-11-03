@@ -106,4 +106,24 @@
 // console.log(calculateSalary(1000, 'usd'))
 
 // console.log(calculateSalary(1000, 'euro'))
-console.log(calculateSalary(1000, 'hrn'))
+// console.log(calculateSalary(1000, 'hrn'))
+
+/*
+        Напишіть 2 функції:
+        1. Конвертує вагу у фунтах у вагу в кілограмах: 1 фут це 0,453 кг.
+        2. Отримує 2 аргументи - зріст у футах та зріст у дюймах, і повертає сумарний зріст у см.
+        1 фут = 34.8 см, 1 дюйм = 2.54 см
+        */
+
+// const weightCalculator = weightInFeet => {
+//   return (weightInFeet * 0.453).toFixed(1);
+
+// }
+
+// console.log(weightCalculator(100))
+
+// const heightCalculator = (heightInFeets, heightInInches) => {
+//   return heightInFeet * 34.8 + heightInInches * 2.54;
+// }
+
+// console.log(heightCalculator(1000, 1000))
