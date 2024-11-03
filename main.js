@@ -127,3 +127,15 @@
 // }
 
 // console.log(heightCalculator(1000, 1000))
+
+
+/*
+      Напишіть функцію, яка отримує радіус кола и повертає його площу за формулою:
+      число пі помножити на радіус у квадраті.
+      */
+
+// const areaCalculator = radius => {
+//   return Math.pow(radius, 2) * 3.14;
+// }
+
+// console.log(areaCalculator(10))
