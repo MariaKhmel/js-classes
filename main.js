@@ -29,21 +29,21 @@
 //  можна отримати в віці, і false, якщо ні.
 
 
-const form = document.querySelector('form');
+// const form = document.querySelector('form');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const form = e.target;
-  const age = Number(form.elements.age.value);
-  const category = form.elements.category.value;
-  if (age >= 18) {
-    console.log(true)
-  } else if (age >= 16 && (category === 'A1' || category === 'A2')) {
-    console.log(true)
-  } else {
-    console.log(false)
-  }
-});
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   const form = e.target;
+//   const age = Number(form.elements.age.value);
+//   const category = form.elements.category.value;
+//   if (age >= 18) {
+//     console.log(true)
+//   } else if (age >= 16 && (category === 'A1' || category === 'A2')) {
+//     console.log(true)
+//   } else {
+//     console.log(false)
+//   }
+// });
 
 
 // const checkUserAge = () => {
