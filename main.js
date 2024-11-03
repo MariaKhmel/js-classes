@@ -6,6 +6,8 @@
 // - ціле число;
 // - Більше 0
 
+
+
 // const checkUserAge = () => {
 //   const userAgeInput = prompt('What is your age?');
 //   const result = Number(userAgeInput);
@@ -177,3 +179,51 @@ const floors = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // }
 
 // console.log(estimateDancePairs(answer))
+
+/*
+Напишіть код, який працює так:
+1. Запитує у користувача рік.
+2. Виводить через alert коли у вибраному році буде Великдень.
+Підказка: використовуйте алгоритм Гауса для цього.
+*/
+
+// Створіть об'єкт student, у якому будуть такі
+// свійтва:
+// - name;
+// -last name;
+// tabel – об'єкт, що зберігає всі предмети з оцінками.
+// та додайте методи, що обчислюють:
+// - Найгірший бал;
+// - найкращий бал;
+
+// const student = {
+//   name: 'Tom',
+//   lastName: 'Jenckins',
+//   table: {
+//     'Maths': 3,
+//     'English': 4,
+//     'History': 5,
+//     'Literature': 1,
+//   },
+//   calculateLowestMark: function () {
+//     const marks = Object.values(this.table);
+//     return Math.min(...marks);
+//   },
+
+//   calculateHighestMark: function () {
+//     const marks = Object.values(this.table);
+//     let highestMark = marks[0];
+//     marks.forEach(el => {
+//       if (el > highestMark) {
+//         highestMark = el;
+//       }
+//     })
+//     return highestMark;
+//   }
+
+// }
+
+// const newStudent = Object.create(student)
+
+// console.log(newStudent.calculateLowestMark());
+// console.log(newStudent.calculateHighestMark())
