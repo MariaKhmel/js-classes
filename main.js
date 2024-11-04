@@ -326,3 +326,33 @@ const floors = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // poly.updatePostCount(4);
 // console.log(poly.getInfo()); // User poly@mail.com is 19 years old and has 21 posts
 
+// class Storage {
+//   constructor(items) {
+//     this.items = items;
+//   }
+//   getItems() {
+//     return this.items;
+//   }
+
+//   addItem(itemToAdd) {
+//     this.items.push(itemToAdd)
+//   }
+
+//   removeItem(itemToRemove) {
+//     const index = this.items.indexOf(itemToRemove);
+//     if (index !== -1) {
+//       this.items.splice(index, 1)
+//     }
+//   }
+// }
+
+// const storage = new Storage(['🍎', '🍋', '🍇', '🍑']);
+
+// const items = storage.getItems();
+// console.log(items); // [ '🍎', '🍋', '🍇', '🍑' ]
+
+// storage.addItem('🍌');
+// console.log(storage.items); // [ '🍎', '🍋', '🍇', '🍑', '🍌' ]
+
+// storage.removeItem('🍋');
+// console.log(storage.items); // [ '🍎', '🍇', '🍑', '🍌' ]
