@@ -8,6 +8,7 @@
 
 
 
+
 // const checkUserAge = () => {
 //   const userAgeInput = prompt('What is your age?');
 //   const result = Number(userAgeInput);
@@ -456,3 +457,27 @@ const floors = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // myNotes.updateNote('My second note', Notes.Priority.HIGH);
 // console.log(myNotes.items);
 
+// class Toggle {
+//   constructor({ isOpen = false } = {}) {
+//     this.on = isOpen;
+//   }
+
+//   toggle() {
+//     this.on = !this.on;
+//   }
+// }
+
+
+// const firstToggle = new Toggle({ isOpen: true });
+// console.group('firstToggle');
+// console.log(firstToggle.on);
+// firstToggle.toggle();
+// console.log(firstToggle.on);
+// console.groupEnd('firstToggle');
+
+// const secondToggle = new Toggle();
+// console.group('secondToggle');
+// console.log(secondToggle.on);
+// secondToggle.toggle();
+// console.log(secondToggle.on);
+// console.groupEnd('secondToggle');
