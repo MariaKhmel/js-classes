@@ -481,3 +481,23 @@ const floors = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // secondToggle.toggle();
 // console.log(secondToggle.on);
 // console.groupEnd('secondToggle');
+
+// const chopShop = {
+//   stones: [
+//     { name: 'Emerald', price: 1300, quantity: 4 },
+//     { name: 'Diamond', price: 2700, quantity: 3 },
+//     { name: 'Sapphire', price: 1400, quantity: 7 },
+//     { name: 'Ruby', price: 800, quantity: 2 },
+//   ],
+//   calcTotalPrice(stoneName) {
+
+//     const stone = this.stones.find((stone) => stone.name === stoneName);
+//     return stone ? stone.price * stone.quantity : 'stone not found';
+//   }
+// };
+
+// console.log(chopShop.calcTotalPrice('Emerald')); // 5200
+// console.log(chopShop.calcTotalPrice('Diamond')); // 8100
+// console.log(chopShop.calcTotalPrice('Sapphire')); // 9800
+// console.log(chopShop.calcTotalPrice('Ruby')); // 1600
+// console.log(chopShop.calcTotalPrice('Rfy'));
