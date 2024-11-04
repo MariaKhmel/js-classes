@@ -401,3 +401,58 @@ const floors = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // console.log(poly.login); // Poly
 // poly.login = 'Polycutie';
 // console.log(poly.login); // Polycutie
+
+// class Notes {
+//   static Priority = {
+//     LOW: 'low',
+//     NORMAL: 'normal',
+//     HIGH: 'high'
+//   }
+//   constructor(items) {
+//     this.items = items;
+//   }
+
+//   addNote({ text, priority }) {
+//     this.items.push({
+//       text,
+//       priority
+//     })
+//   }
+
+//   removeNote(text) {
+//     this.items.forEach((el, index) => {
+//       if (el.text === text) {
+//         this.items.splice(index, 1);
+//         return;
+//       }
+//     })
+//   }
+//   updateNote(text, priorityToUpdate) {
+//     this.items.forEach((el) => {
+//       if (el.text === text) {
+//         el.priority = priorityToUpdate;
+//       }
+//     })
+//   }
+// }
+
+
+// const myNotes = new Notes([]);
+
+// myNotes.addNote({ text: 'My first note', priority: Notes.Priority.LOW });
+// console.log(myNotes);
+
+// myNotes.addNote({
+//   text: 'My second note',
+//   priority: Notes.Priority.NORMAL,
+// });
+
+
+// console.log(myNotes.items)
+
+// myNotes.removeNote('My first note');
+// console.log(myNotes.items);
+
+// myNotes.updateNote('My second note', Notes.Priority.HIGH);
+// console.log(myNotes.items);
+
