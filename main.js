@@ -246,45 +246,83 @@ const floors = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // Якщо пін - код неправильний – зменшує кількість
 // спроб введення на 1 і якщо їх залишилося 0 - змінює статус на "заблоковано"
 
-const creditCard = {
-  pinCode: 56789,
-  attempts: 3,
-  balance: 1000,
-  creditLimit: 1000,
-  status: 'active',
-  withDrawCash: function (pinCode, sumToWithdraw) {
-    if (this.status !== 'active') {
-      return 'Card is locked!'
-    }
+// const creditCard = {
+//   pinCode: 56789,
+//   attempts: 3,
+//   balance: 1000,
+//   creditLimit: 1000,
+//   status: 'active',
+//   withDrawCash: function (pinCode, sumToWithdraw) {
+//     if (this.status !== 'active') {
+//       return 'Card is locked!'
+//     }
 
-    if (pinCode !== this.pinCode) {
-      this.attempts -= 1;
-      if (this.attempts < 1) {
-        return 'Your card is locked!'
-      }
-      return `Pin is incorrect! You have ${this.attempts} attempts left`
-    }
-    if (sumToWithdraw > (this.balance + this.creditLimit)) {
-      return 'Not enough cash on the balance.'
-    }
+//     if (pinCode !== this.pinCode) {
+//       this.attempts -= 1;
+//       if (this.attempts < 1) {
+//         return 'Your card is locked!'
+//       }
+//       return `Pin is incorrect! You have ${this.attempts} attempts left`
+//     }
+//     if (sumToWithdraw > (this.balance + this.creditLimit)) {
+//       return 'Not enough cash on the balance.'
+//     }
 
-    if (this.balance >= sumToWithdraw) {
-      this.balance -= sumToWithdraw;
-      return 'Successful'
-    } else if ((this.balance + this.creditLimit) >= sumToWithdraw) {
-      const sumToWithdrawFromBalance = sumToWithdraw - this.balance;
-      if (sumToWithdrawFromBalance > 0) {
-        const sumToWithdrawFromCreditLimit = sumToWithdraw - sumToWithdrawFromBalance;
-        this.balance -= sumToWithdrawFromBalance;
-        this.creditLimit -= sumToWithdrawFromCreditLimit;
-        return 'Successful'
-      }
-      this.creditLimit -= sumToWithdraw;
-      return 'Successful'
-    }
-  }
-}
-console.log(creditCard.withDrawCash(56789, 500));
-console.log(creditCard.withDrawCash(56789, 800));
-console.log(creditCard.withDrawCash(56789, 1000));
+//     if (this.balance >= sumToWithdraw) {
+//       this.balance -= sumToWithdraw;
+//       return 'Successful'
+//     } else if ((this.balance + this.creditLimit) >= sumToWithdraw) {
+//       const sumToWithdrawFromBalance = sumToWithdraw - this.balance;
+//       if (sumToWithdrawFromBalance > 0) {
+//         const sumToWithdrawFromCreditLimit = sumToWithdraw - sumToWithdrawFromBalance;
+//         this.balance -= sumToWithdrawFromBalance;
+//         this.creditLimit -= sumToWithdrawFromCreditLimit;
+//         return 'Successful'
+//       }
+//       this.creditLimit -= sumToWithdraw;
+//       return 'Successful'
+//     }
+//   }
+// }
+// console.log(creditCard.withDrawCash(56789, 500));
+// console.log(creditCard.withDrawCash(56789, 800));
+// console.log(creditCard.withDrawCash(56789, 1000));
+
+
+// class User {
+//   constructor({ name, age, numberOfPosts, topics }) {
+//     this.name = name;
+//     this.age = age;
+//     this.numberOfPosts = numberOfPosts;
+//     this.topics = topics;
+//   }
+
+//   getInfo() {
+//     return `User ${this.name} is ${this.age} years old and has ${this.numberOfPosts} posts`
+//   }
+//   updatePostCount(value) {
+//     this.numberOfPosts += value;
+//   }
+// }
+
+
+// const mango = new User({
+//   name: 'mango@mail.com',
+//   age: 24,
+//   numberOfPosts: 20,
+//   topics: ['tech', 'cooking'],
+// });
+// console.log(mango.getInfo()); // User mango@mail.com is 24 years old and has 20 posts
+// mango.updatePostCount(5);
+// console.log(mango.getInfo()); // User mango@mail.com is 24 years old and has 25 posts
+
+// const poly = new User({
+//   name: 'poly@mail.com',
+//   age: 19,
+//   numberOfPosts: 17,
+//   topics: ['sports', 'gaming', 'health'],
+// });
+// console.log(poly.getInfo()); // User poly@mail.com is 19 years old and has 17 posts
+// poly.updatePostCount(4);
+// console.log(poly.getInfo()); // User poly@mail.com is 19 years old and has 21 posts
 
