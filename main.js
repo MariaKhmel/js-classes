@@ -227,3 +227,64 @@ const floors = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // console.log(newStudent.calculateLowestMark());
 // console.log(newStudent.calculateHighestMark())
+
+// Напишіть об'єкт "Кредитна картка", який має властивості:
+//   - правильний pin code;
+// - кількість спроб введення пін - коду, що залишилися;
+// - кількість грошей на рахунку;
+// - Кредитний ліміт;
+// - Статус(активна або заблокована).
+// І методи:
+// - Зняти гроші.Отримує введений користувачем пін код та бажану суму.
+//   Перевіряє, чи заблоковано картку.
+// Якщо так - повертає повідомлення "Карта заблокована,
+// зверніться до банку". Якщо ні - звіряє пін-код із правильним.
+// Якщо все ок - перевіряє чи вистачить грошей з урахуванням ліміту.
+// Якщо все ок - поверне суму та зменшує гроші на рахунку
+// з урахуванням ліміту.
+// Якщо сума надто велика - повертає рядок "Коштів недостатньо".
+// Якщо пін - код неправильний – зменшує кількість
+// спроб введення на 1 і якщо їх залишилося 0 - змінює статус на "заблоковано"
+
+const creditCard = {
+  pinCode: 56789,
+  attempts: 3,
+  balance: 1000,
+  creditLimit: 1000,
+  status: 'active',
+  withDrawCash: function (pinCode, sumToWithdraw) {
+    if (this.status !== 'active') {
+      return 'Card is locked!'
+    }
+
+    if (pinCode !== this.pinCode) {
+      this.attempts -= 1;
+      if (this.attempts < 1) {
+        return 'Your card is locked!'
+      }
+      return `Pin is incorrect! You have ${this.attempts} attempts left`
+    }
+    if (sumToWithdraw > (this.balance + this.creditLimit)) {
+      return 'Not enough cash on the balance.'
+    }
+
+    if (this.balance >= sumToWithdraw) {
+      this.balance -= sumToWithdraw;
+      return 'Successful'
+    } else if ((this.balance + this.creditLimit) >= sumToWithdraw) {
+      const sumToWithdrawFromBalance = sumToWithdraw - this.balance;
+      if (sumToWithdrawFromBalance > 0) {
+        const sumToWithdrawFromCreditLimit = sumToWithdraw - sumToWithdrawFromBalance;
+        this.balance -= sumToWithdrawFromBalance;
+        this.creditLimit -= sumToWithdrawFromCreditLimit;
+        return 'Successful'
+      }
+      this.creditLimit -= sumToWithdraw;
+      return 'Successful'
+    }
+  }
+}
+console.log(creditCard.withDrawCash(56789, 500));
+console.log(creditCard.withDrawCash(56789, 800));
+console.log(creditCard.withDrawCash(56789, 1000));
+
