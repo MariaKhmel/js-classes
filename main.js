@@ -587,3 +587,8 @@ const cars = [
 // const getCarsWithDiscount = cars => cars.filter(({ onSale }) => onSale === true);
 
 // console.table(getCarsWithDiscount(cars));
+
+// const getCarByModel = (cars, model) => cars.find(car => car.model === model);
+
+// console.log(getCarByModel(cars, 'F-150'));
+// console.log(getCarByModel(cars, 'CX-9'));
