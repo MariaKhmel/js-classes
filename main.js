@@ -579,7 +579,11 @@ const cars = [
 // console.table(makeCarsWithDiscount(cars, 0.2));
 // console.table(makeCarsWithDiscount(cars, 0.4));
 
-const filterByPrice = (cars, threshold) => cars.filter(car => car.price < threshold);
+// const filterByPrice = (cars, threshold) => cars.filter(car => car.price < threshold);
 
-console.table(filterByPrice(cars, 30000));
-console.table(filterByPrice(cars, 25000));
+// console.table(filterByPrice(cars, 30000));
+// console.table(filterByPrice(cars, 25000));
+
+// const getCarsWithDiscount = cars => cars.filter(({ onSale }) => onSale === true);
+
+// console.table(getCarsWithDiscount(cars));
