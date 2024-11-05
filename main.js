@@ -536,3 +536,21 @@ const floors = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //     email: 'poly@hotmail.com',
 //   }),
 // );
+
+// const calculator = {
+//   properties: [],
+//   read(a, b) {
+//     this.a = a;
+//     this.b = b;
+//   },
+//   add() {
+//     return this.a + this.b;
+//   },
+//   mult() {
+//     return this.a * this.b;
+//   }
+
+// };
+
+// calculator.read(1, 2);
+// console.log(calculator.add())
