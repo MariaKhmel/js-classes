@@ -592,3 +592,7 @@ const cars = [
 
 // console.log(getCarByModel(cars, 'F-150'));
 // console.log(getCarByModel(cars, 'CX-9'));
+
+// const sortByAscendingAmount = cars => [...cars].sort((car1, car2) => car1.amount - car2.amount);
+
+// console.table(sortByAscendingAmount(cars));
