@@ -596,3 +596,7 @@ const cars = [
 // const sortByAscendingAmount = cars => [...cars].sort((car1, car2) => car1.amount - car2.amount);
 
 // console.table(sortByAscendingAmount(cars));
+
+// const sortByDescendingPrice = cars => cars.toSorted((car1, car2) => car2.price - car1.price);
+
+// console.table(sortByDescendingPrice(cars));
