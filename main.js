@@ -670,3 +670,55 @@ const cars = [
 
 // createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
 // createProduct({ name: '🍋', price: 20, quantity: 5 }, logTotalPrice);
+
+
+// Add methods withdraw(amount, onSuccess, onError) to the account object and
+// deposit(amount, onSuccess, onError), where the first parameter is 
+// the amount of the operation, and second and third are callbacks.
+
+// The withdraw method raises onError if amount is greater than TRANSACTION_LIMIT or this.balance,
+//   and onSuccess otherwise.deposit method raises onError if amount is greater than TRANSACTION_LIMIT
+//    or less or either zero and onSuccess otherwise.
+
+// const TRANSACTION_LIMIT = 1000;
+
+// const account = {
+//   username: 'Jacob',
+//   balance: 400,
+//   withdraw(amount, onSuccess, onError) {
+//     if (amount >= TRANSACTION_LIMIT) {
+//       onError('Amount should not exceed TRANSACTION_LIMIT')
+//     } else if (amount > this.balance) {
+//       onError('Amount should not exceed balance')
+//     } else {
+//       this.balance -= amount;
+//       onSuccess(`Account balance:${this.balance} `)
+//     }
+//   },
+//   deposit(amount, onSuccess, onError) {
+//     if (amount >= TRANSACTION_LIMIT) {
+//       onError('Amount should not exceed TRANSACTION_LIMIT')
+//     } else if (amount <= 0) {
+//       onError('Amount should not be a postive value')
+//     } else {
+//       this.balance += amount;
+//       onSuccess(`Account balance:${this.balance} `)
+//     }
+//   }
+// }
+
+// function handleSuccess(message) {
+//   console.log(`Success! ${message}`);
+// }
+
+// function handleError(message) {
+//   console.log(`Error! ${message}`);
+// }
+
+// account.withdraw(2000, handleSuccess, handleError);
+// account.withdraw(600, handleSuccess, handleError);
+// account.withdraw(300, handleSuccess, handleError);
+// account.deposit(1700, handleSuccess, handleError);
+// account.deposit(0, handleSuccess, handleError);
+// account.deposit(-600, handleSuccess, handleError);
+// account.deposit(600, handleSuccess, handleError);
