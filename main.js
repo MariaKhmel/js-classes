@@ -615,6 +615,17 @@ const cars = [
 //       ? cars.toSorted((car1, car2) => car2.model.localeCompare(car1.model))
 //       : cars;
 
+// const sortByModel = (cars, order) => {
+//   switch (order) {
+//     case 'asc':
+//       return cars.toSorted((car1, car2) => car1.model.localeCompare(car2.model));
+//     case 'desc':
+//       return cars.toSorted((car1, car2) => car2.model.localeCompare(car1.model))
+//   }
+// };
+
+// console.table(sortByModel(cars, 'asc'));
+// console.table(sortByModel(cars, 'desc'));
 
 // console.table(sortByModel(cars, 'asc'));
 // console.table(sortByModel(cars, 'desc'));
