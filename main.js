@@ -600,3 +600,21 @@ const cars = [
 // const sortByDescendingPrice = cars => cars.toSorted((car1, car2) => car2.price - car1.price);
 
 // console.table(sortByDescendingPrice(cars));
+
+// const sortByModel = (cars, order) => {
+//   if (order === 'asc') {
+//     return cars.toSorted((car1, car2) => car1.model.localeCompare(car2.model))
+//   } else if (order === 'desc') {
+//     return cars.toSorted((car1, car2) => car2.model.localeCompare(car1.model))
+//   }
+// };
+// const sortByModel = (cars, order) =>
+//   order === 'asc'
+//     ? cars.toSorted((car1, car2) => car1.model.localeCompare(car2.model))
+//     : order === 'desc'
+//       ? cars.toSorted((car1, car2) => car2.model.localeCompare(car1.model))
+//       : cars;
+
+
+// console.table(sortByModel(cars, 'asc'));
+// console.table(sortByModel(cars, 'desc'));
