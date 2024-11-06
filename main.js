@@ -641,3 +641,7 @@ const cars = [
 // const getModelsOnSale = cars => cars.filter(car => car.onSale === true).map(car => car.model);
 
 // console.table(getModelsOnSale(cars));
+
+// const getSortedCarsOnSale = cars => cars.filter(car => car.onSale === true).toSorted((car1, car2) => car1.price - car2.price);
+
+// console.log(getSortedCarsOnSale(cars));
