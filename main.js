@@ -629,3 +629,10 @@ const cars = [
 
 // console.table(sortByModel(cars, 'asc'));
 // console.table(sortByModel(cars, 'desc'));
+
+// const getTotalAmount = cars => cars.reduce((acc, el) => {
+//   return acc += el.price;
+
+// }, 0);
+
+// console.log(getTotalAmount(cars));
