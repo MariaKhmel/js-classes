@@ -636,3 +636,8 @@ const cars = [
 // }, 0);
 
 // console.log(getTotalAmount(cars));
+
+
+// const getModelsOnSale = cars => cars.filter(car => car.onSale === true).map(car => car.model);
+
+// console.table(getModelsOnSale(cars));
