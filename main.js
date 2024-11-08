@@ -744,3 +744,14 @@ const cars = [
 
 // console.log(
 //   each([1.5, 2.1, 16.4, 9.7, 11.3], (value) => Math.floor(value)));
+
+
+// const logItems = (items) => {
+//   console.log(items);
+//   for (let i = 0; i < items.length; i += 1) {
+//     console.log(`${i + 1} - ${items[i]}`)
+//   }
+// }
+
+// logItems(['Mango', 'Poly', 'Ajax']);
+// logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
