@@ -755,3 +755,27 @@ const cars = [
 
 // logItems(['Mango', 'Poly', 'Ajax']);
 // logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
+
+// function printContactsInfo({ names, phones }) {
+//   const namesList = names.split(',');
+//   const phonesList = phones.split(',');
+//   for (let i = 0; i < namesList.length; i += 1) {
+//     console.log(`${namesList[i]} - ${phonesList[i]}`)
+//   }
+// }
+
+// printContactsInfo({
+//   names: 'Jacob,William,Solomon,Artemis',
+//   phones: '89001234567,89001112233,890055566377,890055566300',
+// });
+
+// function calсulateAverage(...args) {
+//   const total = args.reduce((acc, el) => {
+//     return acc += el;
+//   }, 0)
+//   return total / args.length;
+// }
+
+// console.log(calсulateAverage(1, 2, 3, 4)); // 2.5
+// console.log(calсulateAverage(14, 8, 2)); // 8
+// console.log(calсulateAverage(27, 43, 2, 8, 36)); // 23.2
