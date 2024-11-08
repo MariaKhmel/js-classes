@@ -810,3 +810,41 @@ const cars = [
 //     height: '1.95',
 //   }),
 // );
+
+function printContactsInfo({ names, phones }) {
+  const nameList = names.split(',');
+  const phoneList = phones.split(',');
+  for (let i = 0; i < nameList.length; i += 1) {
+    console.log(`${nameList[i]}: ${phoneList[i]}`);
+  }
+}
+
+// It was
+// printContactsInfo(
+//   'Jacob,William,Solomon,Artemis',
+//   '89001234567,89001112233,890055566377,890055566300',
+// );
+
+// Is expected
+// printContactsInfo({
+//   names: 'Jacob,William,Solomon,Artemis',
+//   phones: '89001234567,89001112233,890055566377,890055566300',
+// });
+
+// function getBotReport({ companyName, bots: { repair: repairBots, defence: defenceBots } }) {
+//   return `${companyName} has ${repairBots + defenceBots} bots in stock`;
+// }
+
+// // It was
+// // console.log(getBotReport('Cyberdyne Systems', 150, 50));
+
+// // Is expected 
+// console.log(
+//   getBotReport({
+//     companyName: 'Cyberdyne Systems',
+//     bots: {
+//       repair: 150,
+//       defence: 50,
+//     },
+//   }),
+// ); // "Cyberdyne Systems has 200 bots in stock"
