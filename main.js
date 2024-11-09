@@ -990,3 +990,13 @@ const Transaction = {
 // console.log(account.balance)
 // console.log(account.getTransactionDetails(1))
 // console.log(account.getTransactionTotal(Transaction.DEPOSIT))
+
+// const calcBMI = (weight, height) => {
+//   const weightToNumber = Number(weight.replace(',', '.'));
+//   const heightToNumber = Number(height.replace(',', '.'));
+//   return (weightToNumber / heightToNumber ** 2).toFixed(1);
+// }
+
+
+// const bmi = calcBMI('88,3', '1.75');
+// console.log(bmi); // 28.8
