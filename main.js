@@ -868,13 +868,13 @@ console.log(
   }),
 ); // "Cyberdyne Systems has 200 items in stock"
 
-console.log(
-  getStockReport({
-    companyName: 'Belacci',
-    stock: {
-      shoes: 20,
-      skirts: 10,
-      hats: 5,
-    },
-  }),
-); // "Belacci has 35 item in stock"
+// console.log(
+//   getStockReport({
+//     companyName: 'Belacci',
+//     stock: {
+//       shoes: 20,
+//       skirts: 10,
+//       hats: 5,
+//     },
+//   }),
+// ); // "Belacci has 35 item in stock"
