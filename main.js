@@ -878,3 +878,18 @@ function printContactsInfo({ names, phones }) {
 //     },
 //   }),
 // ); // "Belacci has 35 item in stock"
+
+
+// const stones = [
+//   { name: 'Emerald', price: 1300, quantity: 4 },
+//   { name: 'Diamond', price: 2700, quantity: 3 },
+//   { name: 'Sapphire', price: 400, quantity: 7 },
+//   { name: 'Rubble', price: 200, quantity: 2 },
+// ];
+
+// function calcTotalPrice(stones, stoneName) {
+//   const stone = stones.find(stone => stone.name === stoneName);
+//   return stone.price * stone.quantity;
+// }
+
+// console.log(calcTotalPrice(stones, 'Rubble'))
