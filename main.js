@@ -1017,3 +1017,12 @@ const Transaction = {
 // }
 
 // console.log(getRectArea('8 11'));
+
+// function findLargestNumber(numbers) {
+//   return numbers.reduce((acc, number) => {
+//     return acc < number ? number : acc;
+//   }, numbers[0])
+// }
+
+// console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94
+// console.log(findLargestNumber([49, 4, 7, 83, 12])); // 83
