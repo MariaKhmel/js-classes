@@ -1026,3 +1026,14 @@ const Transaction = {
 
 // console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94
 // console.log(findLargestNumber([49, 4, 7, 83, 12])); // 83
+
+// function calAverage(...numbers) {
+//   const total = numbers.reduce((acc, num) => {
+//     return acc += num;
+//   }, 0)
+//   return total / numbers.length;
+// }
+
+// console.log(calAverage(1, 2, 3, 4)); // 2.5
+// console.log(calAverage(14, 8, 2)); // 8
+// console.log(calAverage(27, 43, 2, 8, 36)); // 23.2
