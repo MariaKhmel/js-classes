@@ -1000,3 +1000,20 @@ const Transaction = {
 
 // const bmi = calcBMI('88,3', '1.75');
 // console.log(bmi); // 28.8
+
+// const min = (num1, num2) => {
+//   return Math.min(num1, num2);
+// }
+
+
+// console.log(min(2, 5)); // 2
+// console.log(min(3, -1)); // -1
+// console.log(min(1, 1)); // 1
+
+
+// function getRectArea(dimensions) {
+//   const values = dimensions.split(' ').map(Number);
+//   return values[0] * values[1];
+// }
+
+// console.log(getRectArea('8 11'));
