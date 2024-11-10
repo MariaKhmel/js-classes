@@ -1228,3 +1228,70 @@ const Transaction = {
 //   console.log("I don't know you")
 // }
 
+// console.log(5 > 4);
+
+// console.log(10 >= '7');
+
+// console.log('2' > '12');
+
+// console.log('2' < '12');
+
+// console.log('4' == 4);
+
+// console.log('6' === 6);
+
+// console.log('false' === false);
+
+// console.log(1 == true);
+
+// console.log(1 === true);
+
+// console.log('0' == false);
+
+// console.log('0' === false);
+
+// console.log('Papaya' < 'papaya');
+
+// console.log('Papaya' === 'papaya');
+
+// console.log(undefined == null);
+
+// console.log(undefined === null);
+
+// console.log(true && 3);
+
+// console.log(false && 3);
+
+// console.log(true && 4 && 'kiwi');
+
+// console.log(true && 0 && 'kiwi');
+
+// console.log(true || 3);
+
+// console.log(true || 3 || 4);
+
+// console.log(true || false || 7);
+
+// console.log(null || 2 || undefined);
+
+// console.log((1 && null && 2) > 0);
+
+// console.log(null || (2 && 3) || 4);
+
+// console.log(undefined === undefined)
+// const incomingValue = 0;
+// const defaultValue = 10
+// const value = incomingValue ?? defaultValue;
+// console.log(value);
+
+// const totalMinutes = 70;
+
+
+// const hours = Math.floor(totalMinutes / 60);
+// const minutes = totalMinutes % 60;
+// console.log(hours);
+// console.log(minutes);
+
+// const hoursToStr = String(hours).padStart(2, '0');
+// const minutesToStr = String(minutes).padStart(2, '0');
+// console.log(hoursToStr, minutesToStr)
