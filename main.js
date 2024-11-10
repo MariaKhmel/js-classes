@@ -1092,3 +1092,54 @@ const Transaction = {
 
 // updateCourse('Express', 'NestJS');
 // console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+
+
+// Write a script that prints to the console all the words of a string 
+// except the first and the last one.
+// The resulting string must not start or end whitespace character.
+// The script should work for any line.
+
+// const string = 'Welcome to the future';
+
+// const fn = string => {
+//   const arr = string.split(' ');
+//   arr.pop();
+//   arr.shift();
+//   return arr.join(' ').trim();
+// }
+
+// console.log(fn(string));
+
+// Write a script that "unwraps" a string(reverse letter order) and prints it to the console.
+
+
+// const string = 'Welcome to the future';
+// const unwrap = string.split('').reverse().join('');
+// console.log(unwrap)
+
+// let reversedString = '';
+
+// for (let i = string.length - 1; i >= 0; i--) {
+//   reversedString += string[i];
+// }
+// console.log(reversedString)
+
+
+// example 7 - Sorting an array with a loop
+// Write a script to sort an array of strings alphabetically by the first letter of an element.
+
+// const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
+// langs.sort((a, b) => a.localeCompare(b))
+// console.log(langs)
+// Example 8 - Search for an element
+// Write a script to find the smallest number in an array.The code should work for any array of numbers.Use a loop to solve problems.
+
+// const numbers = [2, 17, 94, 1, 23, 37];
+// let min = numbers[0];
+// for (let i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] < min) {
+//     min = numbers[i]
+//   }
+// }
+
+// console.log(min); // 1
