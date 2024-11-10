@@ -1037,3 +1037,58 @@ const Transaction = {
 // console.log(calAverage(1, 2, 3, 4)); // 2.5
 // console.log(calAverage(14, 8, 2)); // 8
 // console.log(calAverage(27, 43, 2, 8, 36)); // 23.2
+
+// const hours = Math.floor(totalMinutes / 60);
+// const minutes = totalMinutes % 60;
+// console.log(hours);
+// console.log(minutes);
+
+// const doubleDigitHours = String(hours).padStart(2, 0);
+// const doubleDigitMinutes = String(minutes).padStart(2, 0);
+// console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
+
+// function formatTime(minutes) { }
+
+// console.log(formatTime(70)); // "01:10"
+// console.log(formatTime(450)); // "07:30"
+// console.log(formatTime(1441)); // "24:01"
+
+// Write functions to work with the courses collection of training courses:
+
+// addCourse(name) - adds a course to the end of the collection
+// removeCourse(name) - removes a course from the collection
+// updateCourse(oldName, newName) - changes the name to a new one
+
+// const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
+
+// const addCourse = (name) => {
+//   if (courses.includes(name)) {
+//     return ' You already have this course';
+//   }
+//   courses.push(name)
+// };
+// const removeCourse = (name) => {
+//   const courseToDelete = courses.indexOf(name);
+//   if (courseToDelete !== -1) {
+//     courses.splice(courseToDelete, 1)
+//   } else {
+//     return 'Course with this name was not found';
+//   }
+
+// }
+
+// const updateCourse = (oldCourse, newCourse) => {
+//   const courseToUpdate = courses.indexOf(oldCourse);
+//   courses.splice(courseToUpdate, 1, newCourse);
+// }
+
+// addCourse('Express');
+// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+// console.log(addCourse('CSS')); // ' You already have this course'
+
+// removeCourse('React');
+// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+// console.log(removeCourse('Vue')); // 'Course with this name was not found'
+
+// updateCourse('Express', 'NestJS');
+// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
