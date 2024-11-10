@@ -1192,3 +1192,39 @@ const Transaction = {
 // }
 
 
+// Write a for loop that prints numbers in ascending order to the browser console 
+// from min to max, but only if the number is a multiple of 5.
+// const max = 100;
+// const min = 20;
+
+// for (let i = min; i <= max; i += 5) {
+//   console.log(i)
+// }
+
+// Example 12 - User Input and Branching
+// Write a script that will ask for login using prompt and log result in browser console.
+
+// If the visitor enters "Admin", then prompt prompts for a password
+// If nothing is entered or the Esc key is pressed - print the line "Canceled"
+// Otherwise print the string "I don't know you"
+// Check password like this:
+
+// If the password is "I'm an admin", then output the string "Hello!"
+// Else output the string "Wrong password"
+
+// const login = prompt('login');
+
+
+// if (login === "Admin") {
+//   const password = prompt('password');
+//   if (password === "I'm an admin") {
+//     console.log('Hello!')
+//   } else {
+//     console.log('wrong pass')
+//   }
+// } else if (login === null) {
+//   console.log("Canceled")
+// } else {
+//   console.log("I don't know you")
+// }
+
