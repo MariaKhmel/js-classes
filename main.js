@@ -1143,3 +1143,52 @@ const Transaction = {
 // }
 
 // console.log(min); // 1
+
+// Write a script that checks if the value of the link variable ends symbol /.
+// if not, add this character to the end of the link value.Use if...else construction.
+
+// let link = 'https://my-site.com/about';
+// // Write code below this line
+// if (link[link.length - 1] !== '/') {
+//   link += '/';
+// }
+// // Write code above this line
+// console.log(link);
+
+// // Write a script that checks if the value of the link variable ends by symbol /.
+// // If not, append this character to the end of the link value,
+// //   but only if link contains the substring "my-site".
+
+// let link = 'https://somesite.com/about';
+// // Write code below this line
+
+// if (link[link.length - 1] !== '/' && link.includes("my-site")) {
+//   link += '/';
+// }
+
+// // Write code above this line
+// console.log(link);
+
+// let link = 'https://somesite.com/about';
+// link.includes('my-site') && !link.endsWith('/') ? link += '/' : link;
+// console.log(link);
+
+// Write a script that will output a string to the browser console depending on hours variable values.
+
+// const daysUntilDeadline = 1;
+// switch (daysUntilDeadline) {
+//   case (0):
+//     console.log('Today');
+//     break;
+//   case (1):
+//     console.log('Tomorrow');
+//     break;
+//   case (2):
+//     console.log('The day after tomorrow');
+//     break;
+//   default:
+//     console.log('Date in the future');
+
+// }
+
+
