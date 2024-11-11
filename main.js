@@ -1295,3 +1295,5 @@ const Transaction = {
 // const hoursToStr = String(hours).padStart(2, '0');
 // const minutesToStr = String(minutes).padStart(2, '0');
 // console.log(hoursToStr, minutesToStr)
+
+// console.log(Object.assign({}, { a: 1 }, { b: 1 }));
