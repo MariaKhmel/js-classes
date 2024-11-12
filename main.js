@@ -1284,16 +1284,16 @@ const Transaction = {
 // const value = incomingValue ?? defaultValue;
 // console.log(value);
 
-// const totalMinutes = 70;
+const totalMinutes = 70;
 
 
-// const hours = Math.floor(totalMinutes / 60);
-// const minutes = totalMinutes % 60;
-// console.log(hours);
-// console.log(minutes);
+const hours = Math.floor(totalMinutes / 60);
+const minutes = totalMinutes % 60;
+console.log(hours);
+console.log(minutes);
 
-// const hoursToStr = String(hours).padStart(2, '0');
-// const minutesToStr = String(minutes).padStart(2, '0');
-// console.log(hoursToStr, minutesToStr)
+const hoursToStr = String(hours).padStart(2, '0');
+const minutesToStr = String(minutes).padStart(2, '0');
+console.log(hoursToStr, minutesToStr)
 
-// console.log(Object.assign({}, { a: 1 }, { b: 1 }));
+console.log(Object.assign({}, { a: 1 }, { b: 1 }));
